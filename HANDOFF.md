@@ -60,6 +60,12 @@ preservando a possibilidade de versionar exemplos de configuração, fixtures
 e assets próprios. O GitHub é um repositório independente, sem vínculo de
 fork. Essas verificações são da base documental, não de uma aplicação web.
 
+O commit `fb7d934` foi clonado anonimamente do GitHub, sem a pasta da origem
+ao lado: os 12 arquivos versionados e os 28 links internos foram conferidos,
+com árvore limpa. A API pública confirmou o repositório público, habilitado
+e com branch padrão `main`. O envio normal de Git também passou na conferência
+`--dry-run`, usando o helper GitHub CLI configurado somente neste repo.
+
 ## Próximo passo
 
 Comece por [docs/ESCOPO.md](docs/ESCOPO.md) e

@@ -5,7 +5,7 @@ backlog do STT-widget. Registrar uma etapa não autoriza executar todas.
 
 | ID | Etapa | Estado |
 | --- | --- | --- |
-| HUB-001 | Preparar identidade, pasta/repo próprios, referências e handoff. | Organização inicial preparada; ver HANDOFF.md. |
+| HUB-001 | Preparar identidade, pasta/repo próprios, referências e handoff. | Concluída; GitHub público e clone independente conferidos. |
 | HUB-002 | Fechar caso de uso e recorte da primeira entrega. | Próxima decisão com o usuário. |
 | HUB-003 | Escolher stack e avaliar reaproveitamento seletivo. | Pendente de HUB-002. |
 | HUB-004 | Scaffoldar a aplicação e documentar como executar localmente. | Pendente das decisões anteriores. |

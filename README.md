@@ -9,7 +9,7 @@ O recorte funcional ainda será fechado com o usuário.
 
 ## Estado do projeto
 
-Organização inicial criada em **15 de outubro de 2026**. Esta base contém
+Organização inicial concluída em **15 de outubro de 2026**. Esta base contém
 documentação, referência de processamento e preparação do repositório.
 Ainda não há aplicação web, API, infraestrutura ou dependências instaladas.
 
