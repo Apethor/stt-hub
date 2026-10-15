@@ -53,6 +53,44 @@ Esta seleção não amplia o escopo funcional nem representa aceite do SaaS.
   Ações que possam perder trabalho precisam de confirmação adequada ao
   fluxo web que for escolhido.
 
+## Abas, grupos e operações mantidas
+
+- Abas isolam textos, áudio, opções, tarefas e erros. Tamanhos e recolhimentos
+  pertencem à aba; aparência não deve destruir editores ou suas tarefas.
+- Juntar concatena; Mesclar processa com LLM. Ambas operam somente no grupo
+  de origem e preservam os originais antes de substituir/fechar conteúdos.
+- Validar fontes, revisões e grupo na conclusão. Falha/cancelamento ou falha
+  de persistência não autoriza aplicar um resultado parcial como sucesso.
+- Fechar conteúdo exige cuidado com rascunhos. As regras de desfazer da origem,
+  incluindo sequência persistida de 30 segundos, são a referência funcional;
+  não reiniciar tarefas nem recriar screenshots excluídas ao restaurar.
+
+## Screenshots
+
+- Captura de imagem não pausa a gravação. Reserve o marcador temporal ao
+  iniciar a ação, descontando pausas, e mantenha áudio/aba de origem mesmo
+  quando a seleção terminar depois.
+- Cancelar seleção não deixa imagem/editor ou marcador pendente.
+  Cada editor salva somente sua própria captura; zoom não altera seus pixels.
+- Excluir a captura remove também seus vínculos em documentos, históricos e
+  estados restauráveis, sem republicar falas nem recriar imagens excluídas.
+- Aquisição e editor precisam de adaptação web. Substituir caminhos Windows
+  por referências estáveis e autorizadas; um URL temporário de download não
+  deve virar a identidade persistente da screenshot.
+- Persistir uma imagem no armazenamento não significa enviá-la a um modelo
+  de IA. O envio de imagens para processamento não foi decidido nesta rodada.
+
+## Pré-processamento opcional
+
+- Trazer BL-099 como funcionalidade nova: tratamento habilitado por padrão,
+  opção persistida e bypass explícito, preservando o original.
+- Separar o tratamento opcional das conversões de formato necessárias ao
+  reconhecimento. Desabilitar filtros não elimina requisitos do motor.
+- Definir alcance por fluxo e política para tarefas existentes. A opção de
+  preparo deve integrar a identidade de resultado/cache para não misturar
+  trechos preparados de formas diferentes. Não alterar silenciosamente
+  a configuração de uma tarefa em andamento.
+
 ## Adaptações necessárias ao SaaS
 
 As regras abaixo orientam o novo serviço; não são garantias fornecidas

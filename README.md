@@ -3,9 +3,10 @@
 Produto web/SaaS para **profissionais individuais que querem transcrever
 áudio e trabalhar seus textos**.
 
-O fluxo inicial proposto é enviar ou gravar áudio, revisar a transcrição,
-preparar um texto por ação explícita e copiar/exportar o resultado.
-O recorte funcional ainda será fechado com o usuário.
+O fluxo principal parte do microfone da própria pessoa no navegador,
+com transcrição AWS e processamento de texto por ação explícita.
+Screenshots, abas, grupos, Juntar/Mesclar, modo Teams de redação,
+instruções e configurações visuais permanecem no produto.
 
 ## Estado do projeto
 
@@ -18,7 +19,18 @@ Ainda não há aplicação web, API, infraestrutura ou dependências instaladas.
 - Pasta de trabalho: **STT-Hub**.
 - Branch principal: **main**.
 - GitHub: [Apethor/stt-hub](https://github.com/Apethor/stt-hub), público.
-- Stack, providers, hospedagem e cobrança: decisões pendentes.
+- Frontend: **Angular com o padrão Orquestra**, a partir das skills e
+  componentes disponíveis no ambiente de implementação.
+- IA cloud: **AWS Bedrock e Amazon Transcribe**, com opções para comparação.
+- Armazenamento de arquivos: **preferência por S3**, com viabilidade e
+  arquitetura de metadados ainda em avaliação.
+- Backend, autenticação, hospedagem e cobrança: decisões pendentes.
+- Whisper no navegador: investigação; ainda não aprovado como fallback.
+
+Ficam fora desta primeira versão o modo Equipe, captura de áudio do sistema,
+vídeo, Painel de sons/botoneira e conexões de IA por API genérica,
+OpenAI/OpenRouter ou Azure. Entra ID para login é uma investigação separada
+da exclusão de Azure como provider de IA.
 
 ## Continuar o trabalho
 
@@ -32,6 +44,7 @@ próximo passo e inclui um texto para iniciar a próxima sessão.
 | [Origem e reaproveitamento](docs/ORIGEM.md) | Projeto de referência, revisão fixa e mapa de módulos/testes. |
 | [Contratos](docs/CONTRATOS.md) | Regras úteis para orientar a implementação das funcionalidades mantidas. |
 | [Backlog](docs/BACKLOG.md) | Etapas próprias do STT Hub, separadas do desktop. |
+| [Investigações](docs/INVESTIGACOES.md) | Whisper no navegador, Entra ID, S3 e adaptação de screenshots. |
 
 ## Em outra máquina
 
@@ -43,8 +56,8 @@ cd STT-Hub
 ```
 
 Comece por `AGENTS.md` e `HANDOFF.md`. Nesta etapa documental, Git é o único
-requisito de ferramenta; runtime, dependências e comandos da aplicação serão
-definidos quando a stack for escolhida. Ainda não existe um comando para
+requisito de ferramenta; versões, dependências e comandos da aplicação serão
+definidos com a base Angular/Orquestra e o backend. Ainda não existe um comando para
 executar o SaaS.
 
 As referências de código e contratos da origem estão em links do GitHub

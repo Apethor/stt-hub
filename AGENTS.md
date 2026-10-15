@@ -10,11 +10,31 @@ Este é um projeto independente para profissionais individuais que querem
 transcrever áudio e trabalhar textos. O projeto de origem se chama
 **STT-widget** e pode continuar em paralelo.
 
-A etapa inicial autorizada é organizar a nova base, Git/GitHub, referências
-e continuidade. A implementação da aplicação ainda não começou. Escopo,
-stack e providers serão fechados na próxima etapa, conforme o pedido do
-usuário. Uma proposta no [backlog](docs/BACKLOG.md) não é automaticamente
-uma decisão de produto nem autorização para executar todas as etapas.
+A organização inicial está concluída. A rodada seguinte confirmou o recorte
+de produto, Angular/Orquestra e IA cloud por Bedrock e Amazon Transcribe.
+Consulte as decisões atuais antes de propor arquitetura. O trabalho desta
+rodada é documentar escolhas e investigações e publicá-las; a implementação
+da aplicação ainda não começou. Uma proposta no [backlog](docs/BACKLOG.md)
+não é automaticamente autorização para executar todas as etapas.
+
+## Direção confirmada
+
+- Frontend em Angular com Orquestra, o padrão de componentes indicado pelo
+  usuário. As skills/artefatos serão disponibilizados no ambiente de destino.
+  Não invente pacote, versão ou contrato a partir de um projeto homônimo.
+- Capture somente o microfone da própria pessoa, com autorização do navegador.
+  Sem modo Equipe, áudio do sistema, vídeo ou Painel de sons/botoneira.
+- Mantenha screenshots, processamento, abas/grupos, Juntar/Mesclar, modo
+  Teams de redação, instruções e configurações visuais. Teams não é Equipe.
+- Os providers de IA cloud são Bedrock e Amazon Transcribe. Não trazer
+  conectores genéricos, OpenAI/OpenRouter ou Azure. A aplicação pode ter sua
+  própria API entre frontend e servidor; a exclusão é dos conectores de IA.
+- Trazer a opção de bypass do pré-processamento descrita em BL-099 da origem;
+  ela ainda não foi implementada ali. Não importar o restante do backlog.
+- S3 é a preferência para arquivos. Banco/metadados, backend e hospedagem
+  não estão escolhidos. Não presumir buckets ou permissões disponíveis.
+- Entra ID para login e Whisper no navegador permanecem investigações.
+  Mock de login é opção de desenvolvimento, não autenticação do SaaS público.
 
 ## Consultar e reaproveitar a origem
 
@@ -46,8 +66,8 @@ por fallback silencioso.
 
 Cada recurso, arquivo e tarefa pertence a um usuário autorizado. Chaves de
 serviços ficam no servidor. Não leve perfis ou armazenamento de credenciais
-do desktop para o navegador. Providers, autenticação e hospedagem dependem
-da arquitetura escolhida; não presuma uma conta ou infraestrutura disponível.
+do desktop para o navegador. A integração dos serviços AWS, autenticação e
+hospedagem depende da arquitetura; não presuma infraestrutura disponível.
 
 ## Dados, Git e validação
 
