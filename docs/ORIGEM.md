@@ -10,6 +10,8 @@
 Os links deste documento usam essa revisão, não a branch em movimento.
 O repositório de origem pode continuar evoluindo independentemente.
 Este mapa não exige uma pasta local específica nem acesso à conversa anterior.
+Todas as referências à origem usam URLs do GitHub. Links relativos apontam
+somente para documentos e referências versionados no próprio STT Hub.
 
 ## O que já foi trazido
 

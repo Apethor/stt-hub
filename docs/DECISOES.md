@@ -11,13 +11,14 @@ Registro inicial: **15 de outubro de 2026**.
 | D-003 | Pasta e repositório independentes. | Sem worktree, fork ou dependência permanente da pasta desktop. |
 | D-004 | STT-widget pode continuar em paralelo. | O pivot não remove nem encerra o desktop. |
 | D-005 | Organizar origem e continuidade antes de migrar a sessão. | Entregar mapa de módulos, contratos, decisões e handoff próprios. |
+| D-006 | GitHub público e continuidade em outra máquina. | Usar referências remotas da origem e instruções de clone; substitui a proposta inicial de repo privado. |
 
 ## Organização aplicada nesta preparação
 
 | ID | Escolha | Motivo |
 | --- | --- | --- |
 | O-001 | Pasta `STT-Hub`, repo `Apethor/stt-hub`, branch `main`. | Aplicar o nome escolhido com identificadores convencionais. |
-| O-002 | GitHub inicialmente privado. | Seguir a proposta de organização aceita nesta sessão. |
+| O-002 | GitHub público. | Aplicar D-006, conforme instrução mais recente do usuário. |
 | O-003 | Histórico novo, com commits focados. | Registrar a evolução do SaaS sem importar o histórico desktop. |
 | O-004 | Revisão fixa da origem: `361788018f841637d09c3931f64e8b2819d16347`. | Manter referências rastreáveis mesmo se o desktop evoluir. |
 | O-005 | Levar documentação selecionada e uma referência de prompt; adiar cópia de código. | Avaliar o código junto do recorte e da arquitetura escolhidos. |

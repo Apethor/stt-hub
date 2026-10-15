@@ -20,7 +20,9 @@ backlog do STT-widget. Registrar uma etapa não autoriza executar todas.
 Pedido do usuário: preparar a transição para uma nova sessão, usando
 **STT Hub** desde o início, sem encerrar o desktop. A base leva contexto,
 procedência e um mapa de consulta, sem importar fontes ou dados em bloco.
-O GitHub inicial é privado e o histórico começa neste novo repositório.
+O usuário definiu GitHub público e pediu continuidade em outra máquina.
+O histórico começa neste novo repositório; referências ao desktop usam URLs
+do GitHub, sem depender da pasta local da preparação.
 
 ## HUB-002 e HUB-003 — Próxima etapa
 

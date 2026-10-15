@@ -17,7 +17,7 @@ Ainda não há aplicação web, API, infraestrutura ou dependências instaladas.
 - Identificador do projeto: **stt-hub**.
 - Pasta de trabalho: **STT-Hub**.
 - Branch principal: **main**.
-- GitHub: [Apethor/stt-hub](https://github.com/Apethor/stt-hub), privado.
+- GitHub: [Apethor/stt-hub](https://github.com/Apethor/stt-hub), público.
 - Stack, providers, hospedagem e cobrança: decisões pendentes.
 
 ## Continuar o trabalho
@@ -33,6 +33,24 @@ próximo passo e inclui um texto para iniciar a próxima sessão.
 | [Contratos](docs/CONTRATOS.md) | Regras úteis para orientar a implementação das funcionalidades mantidas. |
 | [Backlog](docs/BACKLOG.md) | Etapas próprias do STT Hub, separadas do desktop. |
 
+## Em outra máquina
+
+Clone o repositório e abra essa pasta como projeto:
+
+```shell
+git clone https://github.com/Apethor/stt-hub.git STT-Hub
+cd STT-Hub
+```
+
+Comece por `AGENTS.md` e `HANDOFF.md`. Nesta etapa documental, Git é o único
+requisito de ferramenta; runtime, dependências e comandos da aplicação serão
+definidos quando a stack for escolhida. Ainda não existe um comando para
+executar o SaaS.
+
+As referências de código e contratos da origem estão em links do GitHub
+em [docs/ORIGEM.md](docs/ORIGEM.md). Não é necessário ter o desktop instalado
+ou sua pasta de fontes ao lado para retomar o planejamento e consultar a base.
+
 ## Relação com o desktop
 
 O STT Hub parte de comportamentos e conhecimento do
@@ -47,7 +65,7 @@ do desktop não foram copiados em bloco.
 ## Licenças
 
 A licença de distribuição do código futuro do STT Hub ainda será definida.
-O repositório privado não implica uma escolha de licença para o produto.
+A visibilidade pública do repositório não define a licença do produto.
 Material derivado do STT-widget conserva seu aviso MIT em
 [licenses/STT-widget-MIT.txt](licenses/STT-widget-MIT.txt), com o alcance
 documentado em [Origem](docs/ORIGEM.md#licenças-e-material-trazido).

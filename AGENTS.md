@@ -57,7 +57,8 @@ da arquitetura escolhida; não presuma uma conta ou infraestrutura disponível.
   explícita; áudio de teste não é automaticamente dado descartável.
 - Use `.env.example` apenas com nomes de variáveis e valores fictícios.
 - Configure autoria e credenciais Git somente neste repositório quando
-  precisar alterá-las. A visibilidade inicial do GitHub é privada.
+  precisar alterá-las. O GitHub é público por escolha explícita do usuário;
+  revise o conteúdo dos commits antes de enviar.
 - A `.gitignore` cobre padrões comuns, mas confira o conteúdo a publicar.
 - Execute verificações adequadas à mudança e à stack efetiva. Nesta fase
   documental, confira links, referências, nomes e conteúdo versionado.
